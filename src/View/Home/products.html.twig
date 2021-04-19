@@ -1,0 +1,14 @@
+
+{% extends 'layout.html.twig' %}
+{% block content %}
+    <p> Voici nos produits </P>
+    
+    {% for product in products %}
+    {% if product is same as "cithare" %}
+    <br>
+    {% endif %}
+    {{ product }} 
+    {% endfor %}
+    
+    {{ dump(products) }}
+    {% endblock %}
